@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(144, 15%, 87%);
+  --accent-color: hsl(210, 14%, 90%);
+}
+
+body {
+  background: #fff;
+}
+
+
+
+/* first header */
+.header-one ul {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+}
+
+.header-one ul li {
+  padding-left: 10px;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  transition: 700ms;
+  font-size: large;
+}
+
+.header-one ul li:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.header-one {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: medium;
+  background-color: var(--accent-color);
+  align-items: center;
+  padding: 12px;
+}
+
+/* second header  */
+
+.header-two {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: medium;
+  padding: 10px;
+  text-transform: capitalize;
+  align-items: center;
+  padding: 30px;
+}
+
+.list-items {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.list-items li {
+  padding-left: 20px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  transition: 700ms;
+}
+
+.list-items li:hover {
+  cursor: pointer;
+}
+.icon-list {
+  justify-content: end;
+  position: absolute;
+  right: 100px;
+  top: -5px;
+}
+
+input {
+  border-radius: 15px;
+  padding: 10px;
+  outline: none;
+  border-color: var(--accent-color);
+  border-style: groove;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: black;
+  padding: 10px;
+  text-transform: capitalize;
+  font-family: "roboto";
+}
+
+/* main starts */
+
+.main-container > img {
+  width: 95rem;
+  height: 40rem;
+  object-fit: cover;
+}
+
+#content {
+  margin: 30px;
+  padding: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "roboto", sans-serif;
+  padding-top: 30px;
+  align-items: center;
+}
+#content small {
+  font-size: 19px;
+}
+#content h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+#content p {
+  width: 400px;
+  margin-left: 31rem;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+#content button {
+  padding: 10px;
+  border-radius: 25px;
+  background: #000;
+  color: white;
+  margin: 20px;
+  width: 90px;
+  transition: 600ms;
+  font-family: "roboto";
+  border: none;
+}
+
+#content button:hover {
+  background-color: var(--primary-color);
+  color: black;
+  cursor: pointer;
+  border: #000;
+}
+
+/* features starts */
+
+.main-features {
+  margin: 20px;
+  margin-bottom: 7rem;
+}
+
+.heading {
+  padding-left: 20px;
+  text-transform: capitalize;
+  font-family: "roboto";
+}
+.heading h1 {
+  font-weight: 300;
+}
+.main-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+.one {
+  background-image: url(https://plus.unsplash.com/premium_photo-1685175199155-110c178cc43a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmlrZXxlbnwwfDF8MHx8fDA%3D);
+}
+
+.two {
+  background-image: url(https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG5pa2V8ZW58MHwxfDB8fHww);
+}
+
+.three {
+  background-image: url(https://images.unsplash.com/photo-1534565337397-2a97f4e093b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fG5pa2V8ZW58MHwxfDB8fHww);
+}
+
+.images {
+  width: 100%;
+  margin: 10px;
+  height: 80vh;
+  object-fit: contain;
+  background-position: center;
+  border-radius: 10px;
+}
+.img-text {
+  margin-top: 27rem;
+  text-align: justify;
+  padding: 10px 30px;
+  line-height: 2.2rem;
+  font-family: "roboto";
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.img-text button {
+  padding: 10px;
+  border-radius: 12px;
+  font-family: "roboto";
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 70px;
+  outline: none;
+  font-weight: 600;
+  transition: 400ms;
+}
+
+.img-text button:hover {
+  background-color: #000;
+  color: white;
+}
+
+/* the spotlight section starts */
+
+.main-spotlight {
+  font-family: "roboto";
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 6rem;
+}
+
+.spot-heading {
+  margin-left: 26px;
+  padding-left: 10px;
+  padding-bottom: 1rem;
+}
+.spot-heading h1 {
+  font-weight: 300;
+}
+.spot-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.spot-img {
+  width: 18rem;
+  height: 18rem;
+}
+
+.main-spotlight:hover {
+  cursor: pointer;
+}
+
+/* the trending section were starts */
+
+.main-trending {
+  font-family: "roboto";
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.trend-heading {
+  margin-left: 26px;
+  padding-left: 20px;
+  padding-bottom: 1rem;
+}
+
+.trend-heading h1 {
+  font-weight: 300;
+}
+.trend-images {
+  align-items: center;
+  margin: auto 20px;
+}
+.trend-images:hover {
+  cursor: pointer;
+}
+
+.trend-one,
+.trend-two {
+  height: 40rem;
+  width: 46rem;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.trend-footer {
+  margin: 30px;
+  padding: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "roboto", sans-serif;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.trend-footer > small {
+  font-size: 19px;
+}
+
+.trend-footer > h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.trend-footer button:hover {
+  background-color: var(--primary-color);
+  color: black;
+  cursor: pointer;
+  border: #000;
+}
+.trend-footer > p {
+  width: 400px;
+  margin-left: 31rem;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.trend-footer > button {
+  padding: 10px;
+  border-radius: 25px;
+  background: #000;
+  color: white;
+  margin: 20px;
+  width: 90px;
+  transition: 600ms;
+  font-family: "roboto";
+  border: none;
+}
+
+/* the footer content were starts */
+
+.container-footer {
+  border: 1px solid black;
+  border-top: 1px solid rgba(0, 0, 0, 0.121);
+  width: 80rem;
+  margin-left: 8rem;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-text{
+  margin: 20px 30px;
+  font-family: "roboto";
+  text-transform: capitalize;
+
+}
+
+.footer-text ul{
+  color: grey;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-size: 16px;
+  padding-top: 1rem;
+}
+
+.footer-text>h1{
+  font-size: medium;
+  padding-bottom: 5px;
+}
+
+.footer-text li:hover{
+  color: black;
+  cursor: pointer;
+}
+
+/* finally website is done for  hp victus laptop screen size */
