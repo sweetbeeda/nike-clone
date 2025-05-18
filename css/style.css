@@ -143,14 +143,14 @@ input::placeholder {
   width: 90px;
   transition: 600ms;
   font-family: "roboto";
-  border: none;
+  border: 1px solid transparent;
 }
 
 #content button:hover {
   background-color: var(--primary-color);
   color: black;
   cursor: pointer;
-  border: #000;
+  border:1px solid #000;
 }
 
 /* features starts */
@@ -219,7 +219,7 @@ input::placeholder {
   transition: 400ms;
 }
 
-.img-text button:hover {
+.images:hover>.img-text button {
   background-color: #000;
   color: white;
 }
@@ -318,7 +318,7 @@ input::placeholder {
   background-color: var(--primary-color);
   color: black;
   cursor: pointer;
-  border: #000;
+  border: 1px solid #000;
 }
 .trend-footer > p {
   width: 400px;
@@ -339,7 +339,7 @@ input::placeholder {
   width: 90px;
   transition: 600ms;
   font-family: "roboto";
-  border: none;
+  border: 1px solid transparent;
 }
 
 /* the footer content were starts */
